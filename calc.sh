@@ -35,6 +35,6 @@ DIFF=$(($num1-$num2))
 echo "Difference is: $DIFF"
 PROD=$(($num1*$num2))
 echo "Product is: $PROD"
-QUO=$(($num1%$num2))
+QUO=$(($num1/$num2))
 echo "Quotient is: $QUO"
 fi
