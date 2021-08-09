@@ -31,3 +31,5 @@ else
         echo "$FILE does not exist"
     fi 
 fi
+# display exit code
+echo $?
