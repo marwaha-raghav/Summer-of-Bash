@@ -11,3 +11,5 @@ This repository contains all the problems on Shell Scripting in the problem set,
 - Problems on Fractal Tree
 - Problems on Pattern Drawing.
 - Problems on grep, sed and AWK.
+- Problems on file permissions and management.
+- Problems on Arrays.
