@@ -34,3 +34,27 @@ done
  else
      echo $SUM/$N | bc -l | xargs printf "Average to 3 decimal points is ${SUM}/${N}: %.3f \n"
 fi
+
+# Method 2
+SUM=0
+read -p "Enter the size of the array : " N
+for (( i=0; i<$N; i++ ))
+do
+    read -p "Enter your numbers in the array: " entries
+    arr[$i]=$entries
+    printf "Entry added..."
+    SUM=$SUM+$arr[$i]
+done
+$(bc -l) > /dev/null 2>&1
+STATUS=$?
+if [[ $STATUS -eq 0 ]]
+then
+    echo "Success"
+else
+    "Failure: Install bc"
+fi
+
+
+
+
+
