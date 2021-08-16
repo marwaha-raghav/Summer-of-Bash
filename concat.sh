@@ -1,6 +1,6 @@
 #! /bin/bash
 
-#Method 1 (doesn't seem to work on hackerank for some reason) (but works correctly on shell)
+#Method 1 (doesn't seem to work on hackerank for some reason) (but works correctly on local bash)
 echo "------------------- This is method 1 ---------------------------------------------------------- "
 i=0
 while read line
@@ -17,8 +17,6 @@ do
   
         arr[$i]=${arr[j]}
         ((++j))
-        #echo "works"
-
 done
 echo "concat array is: ${arr[*]}"
 
